@@ -394,13 +394,13 @@ function App() {
                   {CONFIG.SYMBOL} mint price: {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle> */}
-                <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)", fontSize: 35, fontWeight: "bold" }}
-                >
-                  {CONFIG.SYMBOL} mint price: {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}.
-                </s.TextTitle>
-                <s.SpacerXSmall />
+//                 <s.TextTitle
+//                   style={{ textAlign: "center", color: "var(--accent-text)", fontSize: 35, fontWeight: "bold" }}
+//                 >
+//                   {CONFIG.SYMBOL} mint price: {CONFIG.DISPLAY_COST}{" "}
+//                   {CONFIG.NETWORK.SYMBOL}.
+//                 </s.TextTitle>
+//                 <s.SpacerXSmall />
 
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
