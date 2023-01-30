@@ -328,27 +328,10 @@ function App() {
                 color: "var(--accent-text)",
               }}
             >
-              Time until mint:
+              MINT OPEN
             </s.TextDescription>
 
 
-            <s.TextDescription
-              style={{
-                textAlign: "center",
-                fontSize: 60,
-                fontWeight: "bold",
-                color: "var(--accent-text)",
-              }}
-            >
-              {truncate(
-                new Date(timeRemaining).toLocaleString("en-GB", {
-                  hour: "numeric",
-                  minute: "numeric",
-                  second: "numeric",
-                }),
-                10
-              )}
-            </s.TextDescription>
 
 
             <s.TextDescription
