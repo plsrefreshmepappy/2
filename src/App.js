@@ -206,7 +206,7 @@ function App() {
 
   useEffect(() => {
     // Calculate the time remaining in the timer
-    const endTime = new Date("2023-01-22T18:00:00Z");
+    const endTime = new Date("2023-01-22T17:00:00Z");
     const timeRemaining = endTime - new Date();
 
     // Set the initial time remaining
