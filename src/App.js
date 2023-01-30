@@ -339,16 +339,16 @@ function App() {
 
 
 
-            <s.TextDescription
-              style={{
-                textAlign: "center",
-                fontSize: 60,
-                fontWeight: "bold",
-                color: "var(--accent-text)",
-              }}
-            >
-              SUPPLY:
-            </s.TextDescription>
+//             <s.TextDescription
+//               style={{
+//                 textAlign: "center",
+//                 fontSize: 60,
+//                 fontWeight: "bold",
+//                 color: "var(--accent-text)",
+//               }}
+//             >
+//               SUPPLY:
+//             </s.TextDescription>
 
             <s.TextTitle
               style={{
