@@ -405,7 +405,7 @@ function App() {
                         getData();
                       }}
                     >
-                      MINT
+                      connect your wallet
                     </StyledButton>
 
                     {blockchain.errorMsg !== "" ? (
