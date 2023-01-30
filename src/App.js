@@ -135,7 +135,7 @@ function App() {
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
-    let totalGasLimit = String(120000);
+    let totalGasLimit = String(150000);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
@@ -173,8 +173,8 @@ function App() {
 
   const incrementMintAmount = () => {
     let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 10) {
-      newMintAmount = 10;
+    if (newMintAmount > 20) {
+      newMintAmount = 20;
     }
     setMintAmount(newMintAmount);
   };
@@ -206,7 +206,7 @@ function App() {
 
   useEffect(() => {
     // Calculate the time remaining in the timer
-    const endTime = new Date("2023-01-22T11:00:00Z");
+    const endTime = new Date("2023-01-22T18:00:00Z");
     const timeRemaining = endTime - new Date();
 
     // Set the initial time remaining
@@ -320,6 +320,8 @@ function App() {
 
 
 
+
+
             <s.TextDescription
               style={{
                 textAlign: "center",
@@ -328,8 +330,28 @@ function App() {
                 color: "var(--accent-text)",
               }}
             >
-              MINT OPEN
+              Time until mint:
             </s.TextDescription>
+
+
+            <s.TextDescription
+              style={{
+                textAlign: "center",
+                fontSize: 60,
+                fontWeight: "bold",
+                color: "var(--accent-text)",
+              }}
+            >
+              {truncate(
+                new Date(timeRemaining).toLocaleString("en-GB", {
+                  hour: "numeric",
+                  minute: "numeric",
+                  second: "numeric",
+                }),
+                10
+              )}
+            </s.TextDescription>
+
 
 
 
